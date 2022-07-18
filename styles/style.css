@@ -103,3 +103,40 @@ hr{
 .fa-star.empty{
     color: #AEAEAE;
 }
+
+/* Media Queries */
+/* Mobile Devices */
+@media only screen and (max-width: 688px){
+    .section-title{
+        text-align: center;
+    }
+    .container{
+        width: 100%;
+    }
+    .players, .blogs, .courses{
+        /* background-color: tomato; */
+        grid-template-columns: repeat(1, 1fr);
+       
+    }
+    .player, .blog, .courses{
+        /* justify-content: center; */
+        flex-direction: column;
+    }
+   
+}
+/* Tablet Devices */
+@media only screen and (min-width: 689px) and (max-width: 992px){
+    .section-title{
+        text-align: center;
+    }
+    .container{
+        width: 100%;
+    }
+    .players, .blogs, .courses{
+        /* background-color: tomato; */
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .player, .blogs, .course{
+        flex-direction: column;
+    }
+}
